@@ -78,7 +78,7 @@ const {name, cognome, eta, nazionalita} = me;
 
 // Questo è  un Array. Userò il desctucturing per rendere il codice più pulito. Al posto delle parentesi graffe, si usano le parentesi quadre.
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-const [first, second, third, ...rest] =numbers;
+const [first, second, third, ...rest] = numbers;
 
 console.log(first)
 console.log(second)
