@@ -1,18 +1,21 @@
-        // Copia qui il tuo script JavaScript
-        let darkModeIcon = document.getElementById("darkModeIcon");
+let darkModeIcon = document.getElementById("darkModeIcon");
 
-        darkModeIcon.addEventListener("click", function () {
-            toggleDarkMode();
-        });
+let audio = new Audio('light.wav');
 
-        function toggleDarkMode() {
-            let element = document.body;
-            if (element.classList.contains("dark-mode")) {
-                element.classList.remove("dark-mode");
-            } else {
-                element.classList.add("dark-mode");
-            }
-        }
+darkModeIcon.addEventListener("click", function () {
+    toggleDarkMode();
+    // Riproduci il suono
+    audio.play();
+});
+
+function toggleDarkMode() {
+    let element = document.body;
+    if (element.classList.contains("dark-mode")) {
+        element.classList.remove("dark-mode");
+    } else {
+        element.classList.add("dark-mode");
+    }
+}
 
 // // // Prendo una variabile e la incremento di 1 fino a che è vera la condizione per cui la variabile è <=20.
 // // // Alert manda a schermo i numeri da 0 a 20.
@@ -85,16 +88,16 @@
 
 //  Questo è un Object. Userò il desctucturing per rendere il codice più pulito.
 // Dichiaro una variabile, "me", al cui interno inserisco alcuni elementi (name, cognome, eta, nazionalita) che contengono un valore.
-const me = {name: 'Fabio', cognome: 'Mazzilli', eta: 39, nazionalita: 'italiana'};
+const me = { name: 'Fabio', cognome: 'Mazzilli', eta: 39, nazionalita: 'italiana' };
 // console.log(me) OK
 
 // Questo è invece il desctucturing. Dichiaro una variabile, inserisco {name, congmome, eta, nazionalita} = me. 
-const {name, cognome, eta, nazionalita} = me;
+const { name, cognome, eta, nazionalita } = me;
 console.log(me)
 
 // Questo è  un Array. Userò il desctucturing per rendere il codice più pulito. Al posto delle parentesi graffe, si usano le parentesi quadre.
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-const [first, second, third, ...rest] =numbers;
+const [first, second, third, ...rest] = numbers;
 
 console.log(first)
 console.log(second)
@@ -104,13 +107,13 @@ console.log(rest)
 
 // Ora mi concentro sullo spread
 // In questo caso ho due Array, Array1 composto da elementi che vanno da 1 a 5, Array2 è composto da ...Array1, 6, 7, 8, 9, etc
- const array1 = [1, 2, 3, 4, 5,];
- const array2 = [...array1, 6, 7, 8, 9, 10, 11];
+const array1 = [1, 2, 3, 4, 5,];
+const array2 = [...array1, 6, 7, 8, 9, 10, 11];
 
- console.log(array2)
+console.log(array2)
 
 // In quest'altro esempio creo un Array che decido di copiare con "...originale".
 // Il console.log di "copia" mostra gli elementi contenuti nell'Array "originale"
- const originale = [10, 20, 30, 40, 50];
- const copia = [...originale];
- console.log(copia)
+const originale = [10, 20, 30, 40, 50];
+const copia = [...originale];
+console.log(copia)
