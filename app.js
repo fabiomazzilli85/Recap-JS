@@ -85,3 +85,12 @@ console.log(second)
 console.log(third)
 console.log(rest)
 
+
+// Ora uso lo spread
+// In questo caso ho due Array: Array1 composto da elementi che vanno da 1 a 5, Array2 è composto da ...Array1, 6, 7, 8, 9, 10, 11.
+// Console.log(array2) mostra gli elementi da 1 a 11.
+ const array1 = [1, 2, 3, 4, 5,];
+ const array2 = [...array1, 6, 7, 8, 9, 10, 11];
+
+ console.log(array2)
+
