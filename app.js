@@ -94,3 +94,9 @@ console.log(rest)
 
  console.log(array2)
 
+// In quest'altro esempio creo un Array che decido di copiare con "...originale".
+// Il console.log di "copia" mostra gli elementi contenuti nell'Array "originale"
+ const originale = [10, 20, 30, 40, 50];
+ const copia = [...originale];
+ console.log(copia)
+
