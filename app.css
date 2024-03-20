@@ -10,3 +10,13 @@ body {
     padding: 0;
     color: #9B4444;
 }
+
+.light {
+    margin-left: 35px;
+    color: white;
+}
+
+.dark-mode {
+    background-color: black;
+    color: #0C359E;
+}
